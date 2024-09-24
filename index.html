@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        input[type="text"] {
+            border-radius: 15px;
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            border-radius: 15px;
+            padding: 10px 20px;
+        }
+        .link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin-bottom: 5px;
+        }
+        .link:nth-of-type(2) {
+            top: 30px; /* 第二个链接的位置 */
+        }
+    </style>
+</head>
+<body>
+    <a class="link" href="image_search.html">图像搜索</a>
+    <a class="link" href="advanced_search.html">高级搜索</a>
+    <form action="https://google.com/search">
+        <input type="text" name="q" placeholder="搜索...">
+        <input type="submit" value="谷歌搜索">
+    </form>
+</body>
+</html>
